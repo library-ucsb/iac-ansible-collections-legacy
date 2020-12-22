@@ -1,0 +1,4 @@
+---
+# defaults file for puppet_removal
+
+puppet_distro_service_name: puppet
