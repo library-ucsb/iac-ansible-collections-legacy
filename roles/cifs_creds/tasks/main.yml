@@ -9,3 +9,9 @@
     owner: root
     group: root
   no_log: true
+
+
+- name: ensure cifs-utils is installed
+  package:
+    name: cifs-utils
+    state: latest
