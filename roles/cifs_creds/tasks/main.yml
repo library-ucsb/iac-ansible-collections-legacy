@@ -9,7 +9,7 @@
     owner: root
     group: root
   no_log: true
-  loop: {{ cifs_creds }}
+  loop: "{{ cifs_creds }}"
 
 
 - name: ensure cifs-utils is installed
