@@ -4,7 +4,7 @@
 - name: generate cifs_creds file
   template:
     src: templates/cifs_creds.j2
-    dest: /root/cifs_creds
+    dest: "${cifs_creds_dest}"
     mode: 0400
     owner: root
     group: root

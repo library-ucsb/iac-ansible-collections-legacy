@@ -1,2 +1,4 @@
 ---
 # defaults file for roles/cifs_creds
+
+cifs_creds_dest: /root/cifs_creds
