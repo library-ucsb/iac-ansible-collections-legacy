@@ -1,4 +1,10 @@
 ---
 # defaults file for roles/cifs_creds
 
-cifs_creds_dest: /root/cifs_creds
+# cifs_creds: []
+
+cifs_creds:
+  - name: "netapp_cifs_ro"
+    path: "/root/cifs_creds"
+    user: "{{ secret.cifs_creds.netapp_cifs_ro.user }}" 
+    pass: "{{ secret.cifs_creds.netapp_cifs_ro.pass }}"

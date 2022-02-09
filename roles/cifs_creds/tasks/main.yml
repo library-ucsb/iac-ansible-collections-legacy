@@ -4,11 +4,12 @@
 - name: generate cifs_creds file
   template:
     src: templates/cifs_creds.j2
-    dest: "${cifs_creds_dest}"
+    dest: "{{ item.path }}"
     mode: 0400
     owner: root
     group: root
   no_log: true
+  loop: {{ cifs_creds }}
 
 
 - name: ensure cifs-utils is installed
