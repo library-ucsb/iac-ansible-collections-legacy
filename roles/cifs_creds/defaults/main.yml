@@ -1,6 +1,8 @@
 ---
 # defaults file for roles/cifs_creds
 
+cifs_no_log_enable: true
+
 # cifs_creds: []
 
 cifs_creds:
